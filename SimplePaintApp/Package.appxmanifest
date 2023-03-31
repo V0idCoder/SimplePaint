@@ -7,13 +7,13 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="b0341df3-06cd-486a-bf01-ac3ed93ece52"
-    Publisher="CN=cp-21pap"
+    Name="fbe18f4d-02e9-46b6-9b92-f1fc3aed85aa"
+    Publisher="CN=cp-21trd"
     Version="1.0.0.0" />
 
   <Properties>
     <DisplayName>SimplePaintApp</DisplayName>
-    <PublisherDisplayName>cp-21pap</PublisherDisplayName>
+    <PublisherDisplayName>cp-21trd</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

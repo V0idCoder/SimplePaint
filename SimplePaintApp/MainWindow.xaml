@@ -11,24 +11,35 @@
     xmlns:win2d="using:Microsoft.Graphics.Canvas.UI.Xaml"
     mc:Ignorable="d">
 
-      
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition/>
         </Grid.RowDefinitions>
         <CommandBar HorizontalAlignment="Left">
-            <AppBarToggleButton x:Name="Line" Label="Line" IsChecked="True" Click="LineButton_Click" >
+            
+
+            <AppBarToggleButton Label="Line" IsChecked="True" x:Name="Line" Checked="SelectTool">
                 <AppBarToggleButton.Icon>
                     <ImageIcon Source="Assets/LineTool.svg"/>
                 </AppBarToggleButton.Icon>
             </AppBarToggleButton>
 
-            <AppBarToggleButton x:Name="Rectangle" Label="Rectangle" IsChecked="False" Click="RectangleButton_Click">
+
+            <AppBarToggleButton Label="Rectangle" IsChecked="False" x:Name="Rectangle" Checked="SelectTool">
                 <AppBarToggleButton.Icon>
                     <ImageIcon Source="Assets/RectangleTool.svg"/>
                 </AppBarToggleButton.Icon>
             </AppBarToggleButton>
+            
+            <AppBarToggleButton Label="Ellipse" IsChecked="False" x:Name="Ellipse" Checked="SelectTool">
+                <AppBarToggleButton.Icon>
+                    <ImageIcon Source="Assets/OvalTool.svg"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+
+
+
             <AppBarButton x:Name="ColorsButton"  Label="Colors">
                 <Border x:Name="LineColorBorder" BorderBrush="Black" BorderThickness="5">
                     <FontIcon x:Name="FillColorIcon" Foreground="White"
@@ -37,7 +48,7 @@
                 <AppBarButton.Flyout>
                     <Flyout>
                         <RelativePanel>
-                            <ColorPicker x:Name="ColorsPicker" IsHexInputVisible="False"
+                            <ColorPicker x:Name="ColorsPicker" IsHexInputVisible="False" IsAlphaEnabled="True" IsAlphaTextInputVisible="False"
                     IsColorChannelTextInputVisible="False"/>
                             <Grid RelativePanel.Below="ColorsPicker"
                       RelativePanel.AlignLeftWithPanel="True"
@@ -58,15 +69,42 @@
                     </Flyout>
                 </AppBarButton.Flyout>
             </AppBarButton>
+            <AppBarButton Label="Line Style" AllowFocusOnInteraction="True">
+                <AppBarButton.Icon>
+                    <ImageIcon Source="Assets/LineStyle.svg"/>
+                </AppBarButton.Icon>
+                <AppBarButton.Flyout>
+                    <Flyout x:Name="LineStyleFlyout" >
+                        <StackPanel>
+                            <NumberBox x:Name="LineWidthSelection" 
+                           Value="1" Minimum="1" Maximum="100"
+                           SpinButtonPlacementMode="Inline" />
+                            <ComboBox x:Name="LineStyleSelection" SelectedIndex="0"
+                          Width="120" Margin="0,3,0,0">
+                                <Line X1="0" Y1="5" X2="80" Y2="5" Stroke="Black"
+                   StrokeThickness="3"/>
+                                <Line X1="0" Y1="5" X2="80" Y2="5" Stroke="Black"
+                        StrokeThickness="3" StrokeDashArray="6 1"/>
+                                <Line X1="0" Y1="5" X2="80" Y2="5" Stroke="Black"
+                        StrokeThickness="3" StrokeDashArray="1 1"/>
+                                <Line X1="0" Y1="5" X2="80" Y2="5" Stroke="Black"
+                        StrokeThickness="3" StrokeDashArray="6 1 1 1"/>
+                                <Line X1="0" Y1="5" X2="80" Y2="5" Stroke="Black"
+                        StrokeThickness="3" StrokeDashArray="6 1 1 1 1 1"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </Flyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+
+
+
         </CommandBar>
-
-
-        <win2d:CanvasControl  x:Name="DrawingCanvas" Grid.Row="1"
-                              Draw="DrawingCanvas_Draw"
-                              PointerPressed="DrawingCanvas_PointerPressed"
-                              PointerMoved="DrawingCanvas_PointerMoved"
-                              PointerReleased="DrawingCanvas_PointerReleased"/>
+        <win2d:CanvasControl x:Name="DrawingCanvas" Grid.Row="1" 
+            Draw="DrawingCanvas_Draw"
+            PointerPressed="DrawingCanvas_PointerPressed" 
+            PointerMoved="DrawingCanvas_PointerMoved" 
+            PointerReleased="DrawingCanvas_PointerReleased"/>
     </Grid>
-    
-    
+
 </Window>

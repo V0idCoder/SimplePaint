@@ -224,7 +224,7 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[24];
+            _typeNameTable = new string[34];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -236,21 +236,31 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
             _typeNameTable[8] = "Microsoft.Graphics.Canvas.CanvasDevice";
             _typeNameTable[9] = "Single";
             _typeNameTable[10] = "Windows.Foundation.Size";
-            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.ColorPicker";
-            _typeNameTable[12] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[13] = "Microsoft.UI.Xaml.Controls.ColorSpectrumComponents";
-            _typeNameTable[14] = "System.Enum";
-            _typeNameTable[15] = "Microsoft.UI.Xaml.Controls.ColorSpectrumShape";
-            _typeNameTable[16] = "Int32";
-            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.Orientation";
-            _typeNameTable[18] = "System.Nullable`1<Windows.UI.Color>";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.ImageIcon";
-            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[21] = "Microsoft.UI.Xaml.Media.ImageSource";
-            _typeNameTable[22] = "SimplePaintApp.MainWindow";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.ImageIcon";
+            _typeNameTable[12] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.Media.ImageSource";
+            _typeNameTable[14] = "Microsoft.UI.Xaml.Controls.NumberBox";
+            _typeNameTable[15] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[16] = "Double";
+            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode";
+            _typeNameTable[18] = "System.Enum";
+            _typeNameTable[19] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[20] = "Windows.Globalization.NumberFormatting.INumberFormatter2";
+            _typeNameTable[21] = "String";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
+            _typeNameTable[24] = "Microsoft.UI.Xaml.TextReadingOrder";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.NumberBoxValidationMode";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.ColorPicker";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.ColorSpectrumComponents";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.ColorSpectrumShape";
+            _typeNameTable[29] = "Int32";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.Orientation";
+            _typeNameTable[31] = "System.Nullable`1<Windows.UI.Color>";
+            _typeNameTable[32] = "SimplePaintApp.MainWindow";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Window";
 
-            _typeTable = new global::System.Type[24];
+            _typeTable = new global::System.Type[34];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -262,19 +272,29 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
             _typeTable[8] = typeof(global::Microsoft.Graphics.Canvas.CanvasDevice);
             _typeTable[9] = typeof(global::System.Single);
             _typeTable[10] = typeof(global::Windows.Foundation.Size);
-            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker);
-            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents);
-            _typeTable[14] = typeof(global::System.Enum);
-            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape);
-            _typeTable[16] = typeof(global::System.Int32);
-            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.Orientation);
-            _typeTable[18] = typeof(global::System.Nullable<global::Windows.UI.Color>);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon);
-            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
-            _typeTable[22] = typeof(global::SimplePaintApp.MainWindow);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon);
+            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
+            _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBox);
+            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[16] = typeof(global::System.Double);
+            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode);
+            _typeTable[18] = typeof(global::System.Enum);
+            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[20] = typeof(global::Windows.Globalization.NumberFormatting.INumberFormatter2);
+            _typeTable[21] = typeof(global::System.String);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
+            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.TextReadingOrder);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.ColorPicker);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape);
+            _typeTable[29] = typeof(global::System.Int32);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.Orientation);
+            _typeTable[31] = typeof(global::System.Nullable<global::Windows.UI.Color>);
+            _typeTable[32] = typeof(global::SimplePaintApp.MainWindow);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Window);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -312,9 +332,10 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
         private object Activate_4_CanvasControl() { return new global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl(); }
         private object Activate_8_CanvasDevice() { return new global::Microsoft.Graphics.Canvas.CanvasDevice(); }
-        private object Activate_11_ColorPicker() { return new global::Microsoft.UI.Xaml.Controls.ColorPicker(); }
-        private object Activate_19_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
-        private object Activate_22_MainWindow() { return new global::SimplePaintApp.MainWindow(); }
+        private object Activate_11_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
+        private object Activate_14_NumberBox() { return new global::Microsoft.UI.Xaml.Controls.NumberBox(); }
+        private object Activate_26_ColorPicker() { return new global::Microsoft.UI.Xaml.Controls.ColorPicker(); }
+        private object Activate_32_MainWindow() { return new global::SimplePaintApp.MainWindow(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -396,17 +417,111 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
                 xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Microsoft.UI.Xaml.Controls.ColorPicker
+            case 11:   //  Microsoft.UI.Xaml.Controls.ImageIcon
+                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.IconElement"));
+                userType.Activator = Activate_11_ImageIcon;
+                userType.AddMemberName("Source");
+                xamlType = userType;
+                break;
+
+            case 12:   //  Microsoft.UI.Xaml.Controls.IconElement
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Microsoft.UI.Xaml.Media.ImageSource
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  Microsoft.UI.Xaml.Controls.NumberBox
                 userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_11_ColorPicker;
+                userType.Activator = Activate_14_NumberBox;
+                userType.AddMemberName("Value");
+                userType.AddMemberName("Minimum");
+                userType.AddMemberName("Maximum");
+                userType.AddMemberName("SpinButtonPlacementMode");
+                userType.AddMemberName("AcceptsExpression");
+                userType.AddMemberName("Description");
+                userType.AddMemberName("Header");
+                userType.AddMemberName("HeaderTemplate");
+                userType.AddMemberName("IsWrapEnabled");
+                userType.AddMemberName("LargeChange");
+                userType.AddMemberName("NumberFormatter");
+                userType.AddMemberName("PlaceholderText");
+                userType.AddMemberName("PreventKeyboardDisplayOnProgrammaticFocus");
+                userType.AddMemberName("SelectionFlyout");
+                userType.AddMemberName("SelectionHighlightColor");
+                userType.AddMemberName("SmallChange");
+                userType.AddMemberName("Text");
+                userType.AddMemberName("TextReadingOrder");
+                userType.AddMemberName("ValidationMode");
+                xamlType = userType;
+                break;
+
+            case 15:   //  Microsoft.UI.Xaml.Controls.Control
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  Double
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 17:   //  Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode
+                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Hidden);
+                userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Compact);
+                userType.AddEnumValue("Inline", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Inline);
+                xamlType = userType;
+                break;
+
+            case 18:   //  System.Enum
+                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 19:   //  Microsoft.UI.Xaml.DataTemplate
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 20:   //  Windows.Globalization.NumberFormatting.INumberFormatter2
+                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 21:   //  String
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 22:   //  Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 23:   //  Microsoft.UI.Xaml.Media.SolidColorBrush
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 24:   //  Microsoft.UI.Xaml.TextReadingOrder
+                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 25:   //  Microsoft.UI.Xaml.Controls.NumberBoxValidationMode
+                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("InvalidInputOverwritten", global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode.InvalidInputOverwritten);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode.Disabled);
+                xamlType = userType;
+                break;
+
+            case 26:   //  Microsoft.UI.Xaml.Controls.ColorPicker
+                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_26_ColorPicker;
                 userType.AddMemberName("IsHexInputVisible");
+                userType.AddMemberName("IsAlphaEnabled");
+                userType.AddMemberName("IsAlphaTextInputVisible");
                 userType.AddMemberName("IsColorChannelTextInputVisible");
                 userType.AddMemberName("Color");
                 userType.AddMemberName("ColorSpectrumComponents");
                 userType.AddMemberName("ColorSpectrumShape");
-                userType.AddMemberName("IsAlphaEnabled");
                 userType.AddMemberName("IsAlphaSliderVisible");
-                userType.AddMemberName("IsAlphaTextInputVisible");
                 userType.AddMemberName("IsColorPreviewVisible");
                 userType.AddMemberName("IsColorSliderVisible");
                 userType.AddMemberName("IsColorSpectrumVisible");
@@ -422,11 +537,7 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 12:   //  Microsoft.UI.Xaml.Controls.Control
-                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 13:   //  Microsoft.UI.Xaml.Controls.ColorSpectrumComponents
+            case 27:   //  Microsoft.UI.Xaml.Controls.ColorSpectrumComponents
                 userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("HueValue", global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents.HueValue);
                 userType.AddEnumValue("ValueHue", global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents.ValueHue);
@@ -437,27 +548,22 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  System.Enum
-                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                xamlType = userType;
-                break;
-
-            case 15:   //  Microsoft.UI.Xaml.Controls.ColorSpectrumShape
+            case 28:   //  Microsoft.UI.Xaml.Controls.ColorSpectrumShape
                 userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Box", global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape.Box);
                 userType.AddEnumValue("Ring", global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape.Ring);
                 xamlType = userType;
                 break;
 
-            case 16:   //  Int32
+            case 29:   //  Int32
                 xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  Microsoft.UI.Xaml.Controls.Orientation
+            case 30:   //  Microsoft.UI.Xaml.Controls.Orientation
                 xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  System.Nullable`1<Windows.UI.Color>
+            case 31:   //  System.Nullable`1<Windows.UI.Color>
                 userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetBoxedType(GetXamlTypeByName("Windows.UI.Color"));
                 userType.BoxInstance = userType.BoxType<global::Windows.UI.Color>;
@@ -465,31 +571,18 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.UI.Xaml.Controls.ImageIcon
-                userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.IconElement"));
-                userType.Activator = Activate_19_ImageIcon;
-                userType.AddMemberName("Source");
-                xamlType = userType;
-                break;
-
-            case 20:   //  Microsoft.UI.Xaml.Controls.IconElement
-                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 21:   //  Microsoft.UI.Xaml.Media.ImageSource
-                xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 22:   //  SimplePaintApp.MainWindow
+            case 32:   //  SimplePaintApp.MainWindow
                 userType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_22_MainWindow;
+                userType.Activator = Activate_32_MainWindow;
                 userType.AddMemberName("LineColor");
                 userType.AddMemberName("FillColor");
+                userType.AddMemberName("LineWidth");
+                userType.AddMemberName("LineStyle");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Microsoft.UI.Xaml.Window
+            case 33:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -631,235 +724,445 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
             var that = (global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl)instance;
             that.UseSharedDevice = (global::System.Boolean)Value;
         }
-        private object get_10_ColorPicker_IsHexInputVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsHexInputVisible;
-        }
-        private void set_10_ColorPicker_IsHexInputVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsHexInputVisible = (global::System.Boolean)Value;
-        }
-        private object get_11_ColorPicker_IsColorChannelTextInputVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsColorChannelTextInputVisible;
-        }
-        private void set_11_ColorPicker_IsColorChannelTextInputVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsColorChannelTextInputVisible = (global::System.Boolean)Value;
-        }
-        private object get_12_ColorPicker_Color(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.Color;
-        }
-        private void set_12_ColorPicker_Color(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.Color = (global::Windows.UI.Color)Value;
-        }
-        private object get_13_ColorPicker_ColorSpectrumComponents(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.ColorSpectrumComponents;
-        }
-        private void set_13_ColorPicker_ColorSpectrumComponents(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.ColorSpectrumComponents = (global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents)Value;
-        }
-        private object get_14_ColorPicker_ColorSpectrumShape(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.ColorSpectrumShape;
-        }
-        private void set_14_ColorPicker_ColorSpectrumShape(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.ColorSpectrumShape = (global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape)Value;
-        }
-        private object get_15_ColorPicker_IsAlphaEnabled(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsAlphaEnabled;
-        }
-        private void set_15_ColorPicker_IsAlphaEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsAlphaEnabled = (global::System.Boolean)Value;
-        }
-        private object get_16_ColorPicker_IsAlphaSliderVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsAlphaSliderVisible;
-        }
-        private void set_16_ColorPicker_IsAlphaSliderVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsAlphaSliderVisible = (global::System.Boolean)Value;
-        }
-        private object get_17_ColorPicker_IsAlphaTextInputVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsAlphaTextInputVisible;
-        }
-        private void set_17_ColorPicker_IsAlphaTextInputVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsAlphaTextInputVisible = (global::System.Boolean)Value;
-        }
-        private object get_18_ColorPicker_IsColorPreviewVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsColorPreviewVisible;
-        }
-        private void set_18_ColorPicker_IsColorPreviewVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsColorPreviewVisible = (global::System.Boolean)Value;
-        }
-        private object get_19_ColorPicker_IsColorSliderVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsColorSliderVisible;
-        }
-        private void set_19_ColorPicker_IsColorSliderVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsColorSliderVisible = (global::System.Boolean)Value;
-        }
-        private object get_20_ColorPicker_IsColorSpectrumVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsColorSpectrumVisible;
-        }
-        private void set_20_ColorPicker_IsColorSpectrumVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsColorSpectrumVisible = (global::System.Boolean)Value;
-        }
-        private object get_21_ColorPicker_IsMoreButtonVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.IsMoreButtonVisible;
-        }
-        private void set_21_ColorPicker_IsMoreButtonVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.IsMoreButtonVisible = (global::System.Boolean)Value;
-        }
-        private object get_22_ColorPicker_MaxHue(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.MaxHue;
-        }
-        private void set_22_ColorPicker_MaxHue(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.MaxHue = (global::System.Int32)Value;
-        }
-        private object get_23_ColorPicker_MaxSaturation(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.MaxSaturation;
-        }
-        private void set_23_ColorPicker_MaxSaturation(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.MaxSaturation = (global::System.Int32)Value;
-        }
-        private object get_24_ColorPicker_MaxValue(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.MaxValue;
-        }
-        private void set_24_ColorPicker_MaxValue(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.MaxValue = (global::System.Int32)Value;
-        }
-        private object get_25_ColorPicker_MinHue(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.MinHue;
-        }
-        private void set_25_ColorPicker_MinHue(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.MinHue = (global::System.Int32)Value;
-        }
-        private object get_26_ColorPicker_MinSaturation(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.MinSaturation;
-        }
-        private void set_26_ColorPicker_MinSaturation(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.MinSaturation = (global::System.Int32)Value;
-        }
-        private object get_27_ColorPicker_MinValue(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.MinValue;
-        }
-        private void set_27_ColorPicker_MinValue(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.MinValue = (global::System.Int32)Value;
-        }
-        private object get_28_ColorPicker_Orientation(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.Orientation;
-        }
-        private void set_28_ColorPicker_Orientation(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.Orientation = (global::Microsoft.UI.Xaml.Controls.Orientation)Value;
-        }
-        private object get_29_ColorPicker_PreviousColor(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            return that.PreviousColor;
-        }
-        private void set_29_ColorPicker_PreviousColor(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
-            that.PreviousColor = (global::System.Nullable<global::Windows.UI.Color>)Value;
-        }
-        private object get_30_ImageIcon_Source(object instance)
+        private object get_10_ImageIcon_Source(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ImageIcon)instance;
             return that.Source;
         }
-        private void set_30_ImageIcon_Source(object instance, object Value)
+        private void set_10_ImageIcon_Source(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ImageIcon)instance;
             that.Source = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_31_MainWindow_LineColor(object instance)
+        private object get_11_NumberBox_Value(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.Value;
+        }
+        private void set_11_NumberBox_Value(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.Value = (global::System.Double)Value;
+        }
+        private object get_12_NumberBox_Minimum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.Minimum;
+        }
+        private void set_12_NumberBox_Minimum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.Minimum = (global::System.Double)Value;
+        }
+        private object get_13_NumberBox_Maximum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.Maximum;
+        }
+        private void set_13_NumberBox_Maximum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.Maximum = (global::System.Double)Value;
+        }
+        private object get_14_NumberBox_SpinButtonPlacementMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.SpinButtonPlacementMode;
+        }
+        private void set_14_NumberBox_SpinButtonPlacementMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.SpinButtonPlacementMode = (global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode)Value;
+        }
+        private object get_15_NumberBox_AcceptsExpression(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.AcceptsExpression;
+        }
+        private void set_15_NumberBox_AcceptsExpression(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.AcceptsExpression = (global::System.Boolean)Value;
+        }
+        private object get_16_NumberBox_Description(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.Description;
+        }
+        private void set_16_NumberBox_Description(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.Description = (global::System.Object)Value;
+        }
+        private object get_17_NumberBox_Header(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.Header;
+        }
+        private void set_17_NumberBox_Header(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_18_NumberBox_HeaderTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_18_NumberBox_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_19_NumberBox_IsWrapEnabled(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.IsWrapEnabled;
+        }
+        private void set_19_NumberBox_IsWrapEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.IsWrapEnabled = (global::System.Boolean)Value;
+        }
+        private object get_20_NumberBox_LargeChange(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.LargeChange;
+        }
+        private void set_20_NumberBox_LargeChange(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.LargeChange = (global::System.Double)Value;
+        }
+        private object get_21_NumberBox_NumberFormatter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.NumberFormatter;
+        }
+        private void set_21_NumberBox_NumberFormatter(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.NumberFormatter = (global::Windows.Globalization.NumberFormatting.INumberFormatter2)Value;
+        }
+        private object get_22_NumberBox_PlaceholderText(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.PlaceholderText;
+        }
+        private void set_22_NumberBox_PlaceholderText(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.PlaceholderText = (global::System.String)Value;
+        }
+        private object get_23_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.PreventKeyboardDisplayOnProgrammaticFocus;
+        }
+        private void set_23_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.PreventKeyboardDisplayOnProgrammaticFocus = (global::System.Boolean)Value;
+        }
+        private object get_24_NumberBox_SelectionFlyout(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.SelectionFlyout;
+        }
+        private void set_24_NumberBox_SelectionFlyout(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.SelectionFlyout = (global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)Value;
+        }
+        private object get_25_NumberBox_SelectionHighlightColor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.SelectionHighlightColor;
+        }
+        private void set_25_NumberBox_SelectionHighlightColor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.SelectionHighlightColor = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
+        }
+        private object get_26_NumberBox_SmallChange(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.SmallChange;
+        }
+        private void set_26_NumberBox_SmallChange(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.SmallChange = (global::System.Double)Value;
+        }
+        private object get_27_NumberBox_Text(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.Text;
+        }
+        private void set_27_NumberBox_Text(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.Text = (global::System.String)Value;
+        }
+        private object get_28_NumberBox_TextReadingOrder(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.TextReadingOrder;
+        }
+        private void set_28_NumberBox_TextReadingOrder(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.TextReadingOrder = (global::Microsoft.UI.Xaml.TextReadingOrder)Value;
+        }
+        private object get_29_NumberBox_ValidationMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            return that.ValidationMode;
+        }
+        private void set_29_NumberBox_ValidationMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
+            that.ValidationMode = (global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode)Value;
+        }
+        private object get_30_ColorPicker_IsHexInputVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsHexInputVisible;
+        }
+        private void set_30_ColorPicker_IsHexInputVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsHexInputVisible = (global::System.Boolean)Value;
+        }
+        private object get_31_ColorPicker_IsAlphaEnabled(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsAlphaEnabled;
+        }
+        private void set_31_ColorPicker_IsAlphaEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsAlphaEnabled = (global::System.Boolean)Value;
+        }
+        private object get_32_ColorPicker_IsAlphaTextInputVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsAlphaTextInputVisible;
+        }
+        private void set_32_ColorPicker_IsAlphaTextInputVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsAlphaTextInputVisible = (global::System.Boolean)Value;
+        }
+        private object get_33_ColorPicker_IsColorChannelTextInputVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsColorChannelTextInputVisible;
+        }
+        private void set_33_ColorPicker_IsColorChannelTextInputVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsColorChannelTextInputVisible = (global::System.Boolean)Value;
+        }
+        private object get_34_ColorPicker_Color(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.Color;
+        }
+        private void set_34_ColorPicker_Color(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.Color = (global::Windows.UI.Color)Value;
+        }
+        private object get_35_ColorPicker_ColorSpectrumComponents(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.ColorSpectrumComponents;
+        }
+        private void set_35_ColorPicker_ColorSpectrumComponents(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.ColorSpectrumComponents = (global::Microsoft.UI.Xaml.Controls.ColorSpectrumComponents)Value;
+        }
+        private object get_36_ColorPicker_ColorSpectrumShape(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.ColorSpectrumShape;
+        }
+        private void set_36_ColorPicker_ColorSpectrumShape(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.ColorSpectrumShape = (global::Microsoft.UI.Xaml.Controls.ColorSpectrumShape)Value;
+        }
+        private object get_37_ColorPicker_IsAlphaSliderVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsAlphaSliderVisible;
+        }
+        private void set_37_ColorPicker_IsAlphaSliderVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsAlphaSliderVisible = (global::System.Boolean)Value;
+        }
+        private object get_38_ColorPicker_IsColorPreviewVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsColorPreviewVisible;
+        }
+        private void set_38_ColorPicker_IsColorPreviewVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsColorPreviewVisible = (global::System.Boolean)Value;
+        }
+        private object get_39_ColorPicker_IsColorSliderVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsColorSliderVisible;
+        }
+        private void set_39_ColorPicker_IsColorSliderVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsColorSliderVisible = (global::System.Boolean)Value;
+        }
+        private object get_40_ColorPicker_IsColorSpectrumVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsColorSpectrumVisible;
+        }
+        private void set_40_ColorPicker_IsColorSpectrumVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsColorSpectrumVisible = (global::System.Boolean)Value;
+        }
+        private object get_41_ColorPicker_IsMoreButtonVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.IsMoreButtonVisible;
+        }
+        private void set_41_ColorPicker_IsMoreButtonVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.IsMoreButtonVisible = (global::System.Boolean)Value;
+        }
+        private object get_42_ColorPicker_MaxHue(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.MaxHue;
+        }
+        private void set_42_ColorPicker_MaxHue(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.MaxHue = (global::System.Int32)Value;
+        }
+        private object get_43_ColorPicker_MaxSaturation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.MaxSaturation;
+        }
+        private void set_43_ColorPicker_MaxSaturation(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.MaxSaturation = (global::System.Int32)Value;
+        }
+        private object get_44_ColorPicker_MaxValue(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.MaxValue;
+        }
+        private void set_44_ColorPicker_MaxValue(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.MaxValue = (global::System.Int32)Value;
+        }
+        private object get_45_ColorPicker_MinHue(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.MinHue;
+        }
+        private void set_45_ColorPicker_MinHue(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.MinHue = (global::System.Int32)Value;
+        }
+        private object get_46_ColorPicker_MinSaturation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.MinSaturation;
+        }
+        private void set_46_ColorPicker_MinSaturation(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.MinSaturation = (global::System.Int32)Value;
+        }
+        private object get_47_ColorPicker_MinValue(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.MinValue;
+        }
+        private void set_47_ColorPicker_MinValue(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.MinValue = (global::System.Int32)Value;
+        }
+        private object get_48_ColorPicker_Orientation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.Orientation;
+        }
+        private void set_48_ColorPicker_Orientation(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.Orientation = (global::Microsoft.UI.Xaml.Controls.Orientation)Value;
+        }
+        private object get_49_ColorPicker_PreviousColor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            return that.PreviousColor;
+        }
+        private void set_49_ColorPicker_PreviousColor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ColorPicker)instance;
+            that.PreviousColor = (global::System.Nullable<global::Windows.UI.Color>)Value;
+        }
+        private object get_50_MainWindow_LineColor(object instance)
         {
             var that = (global::SimplePaintApp.MainWindow)instance;
             return that.LineColor;
         }
-        private void set_31_MainWindow_LineColor(object instance, object Value)
+        private void set_50_MainWindow_LineColor(object instance, object Value)
         {
             var that = (global::SimplePaintApp.MainWindow)instance;
             that.LineColor = (global::Windows.UI.Color)Value;
         }
-        private object get_32_MainWindow_FillColor(object instance)
+        private object get_51_MainWindow_FillColor(object instance)
         {
             var that = (global::SimplePaintApp.MainWindow)instance;
             return that.FillColor;
         }
-        private void set_32_MainWindow_FillColor(object instance, object Value)
+        private void set_51_MainWindow_FillColor(object instance, object Value)
         {
             var that = (global::SimplePaintApp.MainWindow)instance;
             that.FillColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_52_MainWindow_LineWidth(object instance)
+        {
+            var that = (global::SimplePaintApp.MainWindow)instance;
+            return that.LineWidth;
+        }
+        private void set_52_MainWindow_LineWidth(object instance, object Value)
+        {
+            var that = (global::SimplePaintApp.MainWindow)instance;
+            that.LineWidth = (global::System.Single)Value;
+        }
+        private object get_53_MainWindow_LineStyle(object instance)
+        {
+            var that = (global::SimplePaintApp.MainWindow)instance;
+            return that.LineStyle;
+        }
+        private void set_53_MainWindow_LineStyle(object instance, object Value)
+        {
+            var that = (global::SimplePaintApp.MainWindow)instance;
+            that.LineStyle = (global::System.Int32)Value;
         }
 
         private global::Microsoft.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -930,164 +1233,309 @@ namespace SimplePaintApp.SimplePaintApp_XamlTypeInfo
                 xamlMember.Getter = get_9_CanvasControl_UseSharedDevice;
                 xamlMember.Setter = set_9_CanvasControl_UseSharedDevice;
                 break;
+            case "Microsoft.UI.Xaml.Controls.ImageIcon.Source":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ImageIcon");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Source", "Microsoft.UI.Xaml.Media.ImageSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_10_ImageIcon_Source;
+                xamlMember.Setter = set_10_ImageIcon_Source;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.Value":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Value", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_NumberBox_Value;
+                xamlMember.Setter = set_11_NumberBox_Value;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.Minimum":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_12_NumberBox_Minimum;
+                xamlMember.Setter = set_12_NumberBox_Minimum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.Maximum":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_13_NumberBox_Maximum;
+                xamlMember.Setter = set_13_NumberBox_Maximum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.SpinButtonPlacementMode":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "SpinButtonPlacementMode", "Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_14_NumberBox_SpinButtonPlacementMode;
+                xamlMember.Setter = set_14_NumberBox_SpinButtonPlacementMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.AcceptsExpression":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "AcceptsExpression", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_15_NumberBox_AcceptsExpression;
+                xamlMember.Setter = set_15_NumberBox_AcceptsExpression;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.Description":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Description", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_16_NumberBox_Description;
+                xamlMember.Setter = set_16_NumberBox_Description;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.Header":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_17_NumberBox_Header;
+                xamlMember.Setter = set_17_NumberBox_Header;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.HeaderTemplate":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_18_NumberBox_HeaderTemplate;
+                xamlMember.Setter = set_18_NumberBox_HeaderTemplate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.IsWrapEnabled":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsWrapEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_19_NumberBox_IsWrapEnabled;
+                xamlMember.Setter = set_19_NumberBox_IsWrapEnabled;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.LargeChange":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "LargeChange", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_20_NumberBox_LargeChange;
+                xamlMember.Setter = set_20_NumberBox_LargeChange;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.NumberFormatter":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "NumberFormatter", "Windows.Globalization.NumberFormatting.INumberFormatter2");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_21_NumberBox_NumberFormatter;
+                xamlMember.Setter = set_21_NumberBox_NumberFormatter;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.PlaceholderText":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "PlaceholderText", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_22_NumberBox_PlaceholderText;
+                xamlMember.Setter = set_22_NumberBox_PlaceholderText;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.PreventKeyboardDisplayOnProgrammaticFocus":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "PreventKeyboardDisplayOnProgrammaticFocus", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_23_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus;
+                xamlMember.Setter = set_23_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.SelectionFlyout":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "SelectionFlyout", "Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_24_NumberBox_SelectionFlyout;
+                xamlMember.Setter = set_24_NumberBox_SelectionFlyout;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.SelectionHighlightColor":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "SelectionHighlightColor", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_25_NumberBox_SelectionHighlightColor;
+                xamlMember.Setter = set_25_NumberBox_SelectionHighlightColor;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.SmallChange":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "SmallChange", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_26_NumberBox_SmallChange;
+                xamlMember.Setter = set_26_NumberBox_SmallChange;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.Text":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Text", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_27_NumberBox_Text;
+                xamlMember.Setter = set_27_NumberBox_Text;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.TextReadingOrder":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "TextReadingOrder", "Microsoft.UI.Xaml.TextReadingOrder");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_28_NumberBox_TextReadingOrder;
+                xamlMember.Setter = set_28_NumberBox_TextReadingOrder;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NumberBox.ValidationMode":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "ValidationMode", "Microsoft.UI.Xaml.Controls.NumberBoxValidationMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_29_NumberBox_ValidationMode;
+                xamlMember.Setter = set_29_NumberBox_ValidationMode;
+                break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.IsHexInputVisible":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsHexInputVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_ColorPicker_IsHexInputVisible;
-                xamlMember.Setter = set_10_ColorPicker_IsHexInputVisible;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ColorPicker.IsColorChannelTextInputVisible":
-                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
-                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsColorChannelTextInputVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_ColorPicker_IsColorChannelTextInputVisible;
-                xamlMember.Setter = set_11_ColorPicker_IsColorChannelTextInputVisible;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ColorPicker.Color":
-                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
-                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Color", "Windows.UI.Color");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_ColorPicker_Color;
-                xamlMember.Setter = set_12_ColorPicker_Color;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ColorPicker.ColorSpectrumComponents":
-                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
-                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "ColorSpectrumComponents", "Microsoft.UI.Xaml.Controls.ColorSpectrumComponents");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_ColorPicker_ColorSpectrumComponents;
-                xamlMember.Setter = set_13_ColorPicker_ColorSpectrumComponents;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ColorPicker.ColorSpectrumShape":
-                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
-                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "ColorSpectrumShape", "Microsoft.UI.Xaml.Controls.ColorSpectrumShape");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_ColorPicker_ColorSpectrumShape;
-                xamlMember.Setter = set_14_ColorPicker_ColorSpectrumShape;
+                xamlMember.Getter = get_30_ColorPicker_IsHexInputVisible;
+                xamlMember.Setter = set_30_ColorPicker_IsHexInputVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.IsAlphaEnabled":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsAlphaEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_ColorPicker_IsAlphaEnabled;
-                xamlMember.Setter = set_15_ColorPicker_IsAlphaEnabled;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ColorPicker.IsAlphaSliderVisible":
-                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
-                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsAlphaSliderVisible", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_ColorPicker_IsAlphaSliderVisible;
-                xamlMember.Setter = set_16_ColorPicker_IsAlphaSliderVisible;
+                xamlMember.Getter = get_31_ColorPicker_IsAlphaEnabled;
+                xamlMember.Setter = set_31_ColorPicker_IsAlphaEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.IsAlphaTextInputVisible":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsAlphaTextInputVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_ColorPicker_IsAlphaTextInputVisible;
-                xamlMember.Setter = set_17_ColorPicker_IsAlphaTextInputVisible;
+                xamlMember.Getter = get_32_ColorPicker_IsAlphaTextInputVisible;
+                xamlMember.Setter = set_32_ColorPicker_IsAlphaTextInputVisible;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ColorPicker.IsColorChannelTextInputVisible":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsColorChannelTextInputVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_33_ColorPicker_IsColorChannelTextInputVisible;
+                xamlMember.Setter = set_33_ColorPicker_IsColorChannelTextInputVisible;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ColorPicker.Color":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Color", "Windows.UI.Color");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_34_ColorPicker_Color;
+                xamlMember.Setter = set_34_ColorPicker_Color;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ColorPicker.ColorSpectrumComponents":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "ColorSpectrumComponents", "Microsoft.UI.Xaml.Controls.ColorSpectrumComponents");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_35_ColorPicker_ColorSpectrumComponents;
+                xamlMember.Setter = set_35_ColorPicker_ColorSpectrumComponents;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ColorPicker.ColorSpectrumShape":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "ColorSpectrumShape", "Microsoft.UI.Xaml.Controls.ColorSpectrumShape");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_36_ColorPicker_ColorSpectrumShape;
+                xamlMember.Setter = set_36_ColorPicker_ColorSpectrumShape;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ColorPicker.IsAlphaSliderVisible":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsAlphaSliderVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_37_ColorPicker_IsAlphaSliderVisible;
+                xamlMember.Setter = set_37_ColorPicker_IsAlphaSliderVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.IsColorPreviewVisible":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsColorPreviewVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_ColorPicker_IsColorPreviewVisible;
-                xamlMember.Setter = set_18_ColorPicker_IsColorPreviewVisible;
+                xamlMember.Getter = get_38_ColorPicker_IsColorPreviewVisible;
+                xamlMember.Setter = set_38_ColorPicker_IsColorPreviewVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.IsColorSliderVisible":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsColorSliderVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_ColorPicker_IsColorSliderVisible;
-                xamlMember.Setter = set_19_ColorPicker_IsColorSliderVisible;
+                xamlMember.Getter = get_39_ColorPicker_IsColorSliderVisible;
+                xamlMember.Setter = set_39_ColorPicker_IsColorSliderVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.IsColorSpectrumVisible":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsColorSpectrumVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_ColorPicker_IsColorSpectrumVisible;
-                xamlMember.Setter = set_20_ColorPicker_IsColorSpectrumVisible;
+                xamlMember.Getter = get_40_ColorPicker_IsColorSpectrumVisible;
+                xamlMember.Setter = set_40_ColorPicker_IsColorSpectrumVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.IsMoreButtonVisible":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "IsMoreButtonVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_ColorPicker_IsMoreButtonVisible;
-                xamlMember.Setter = set_21_ColorPicker_IsMoreButtonVisible;
+                xamlMember.Getter = get_41_ColorPicker_IsMoreButtonVisible;
+                xamlMember.Setter = set_41_ColorPicker_IsMoreButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.MaxHue":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "MaxHue", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_ColorPicker_MaxHue;
-                xamlMember.Setter = set_22_ColorPicker_MaxHue;
+                xamlMember.Getter = get_42_ColorPicker_MaxHue;
+                xamlMember.Setter = set_42_ColorPicker_MaxHue;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.MaxSaturation":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "MaxSaturation", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_ColorPicker_MaxSaturation;
-                xamlMember.Setter = set_23_ColorPicker_MaxSaturation;
+                xamlMember.Getter = get_43_ColorPicker_MaxSaturation;
+                xamlMember.Setter = set_43_ColorPicker_MaxSaturation;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.MaxValue":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "MaxValue", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_ColorPicker_MaxValue;
-                xamlMember.Setter = set_24_ColorPicker_MaxValue;
+                xamlMember.Getter = get_44_ColorPicker_MaxValue;
+                xamlMember.Setter = set_44_ColorPicker_MaxValue;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.MinHue":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "MinHue", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_ColorPicker_MinHue;
-                xamlMember.Setter = set_25_ColorPicker_MinHue;
+                xamlMember.Getter = get_45_ColorPicker_MinHue;
+                xamlMember.Setter = set_45_ColorPicker_MinHue;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.MinSaturation":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "MinSaturation", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_ColorPicker_MinSaturation;
-                xamlMember.Setter = set_26_ColorPicker_MinSaturation;
+                xamlMember.Getter = get_46_ColorPicker_MinSaturation;
+                xamlMember.Setter = set_46_ColorPicker_MinSaturation;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.MinValue":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "MinValue", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_ColorPicker_MinValue;
-                xamlMember.Setter = set_27_ColorPicker_MinValue;
+                xamlMember.Getter = get_47_ColorPicker_MinValue;
+                xamlMember.Setter = set_47_ColorPicker_MinValue;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.Orientation":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Orientation", "Microsoft.UI.Xaml.Controls.Orientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_ColorPicker_Orientation;
-                xamlMember.Setter = set_28_ColorPicker_Orientation;
+                xamlMember.Getter = get_48_ColorPicker_Orientation;
+                xamlMember.Setter = set_48_ColorPicker_Orientation;
                 break;
             case "Microsoft.UI.Xaml.Controls.ColorPicker.PreviousColor":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ColorPicker");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "PreviousColor", "System.Nullable`1<Windows.UI.Color>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_ColorPicker_PreviousColor;
-                xamlMember.Setter = set_29_ColorPicker_PreviousColor;
-                break;
-            case "Microsoft.UI.Xaml.Controls.ImageIcon.Source":
-                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ImageIcon");
-                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "Source", "Microsoft.UI.Xaml.Media.ImageSource");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_ImageIcon_Source;
-                xamlMember.Setter = set_30_ImageIcon_Source;
+                xamlMember.Getter = get_49_ColorPicker_PreviousColor;
+                xamlMember.Setter = set_49_ColorPicker_PreviousColor;
                 break;
             case "SimplePaintApp.MainWindow.LineColor":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SimplePaintApp.MainWindow");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "LineColor", "Windows.UI.Color");
-                xamlMember.Getter = get_31_MainWindow_LineColor;
-                xamlMember.Setter = set_31_MainWindow_LineColor;
+                xamlMember.Getter = get_50_MainWindow_LineColor;
+                xamlMember.Setter = set_50_MainWindow_LineColor;
                 break;
             case "SimplePaintApp.MainWindow.FillColor":
                 userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SimplePaintApp.MainWindow");
                 xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "FillColor", "Windows.UI.Color");
-                xamlMember.Getter = get_32_MainWindow_FillColor;
-                xamlMember.Setter = set_32_MainWindow_FillColor;
+                xamlMember.Getter = get_51_MainWindow_FillColor;
+                xamlMember.Setter = set_51_MainWindow_FillColor;
+                break;
+            case "SimplePaintApp.MainWindow.LineWidth":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SimplePaintApp.MainWindow");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "LineWidth", "Single");
+                xamlMember.Getter = get_52_MainWindow_LineWidth;
+                xamlMember.Setter = set_52_MainWindow_LineWidth;
+                break;
+            case "SimplePaintApp.MainWindow.LineStyle":
+                userType = (global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SimplePaintApp.MainWindow");
+                xamlMember = new global::SimplePaintApp.SimplePaintApp_XamlTypeInfo.XamlMember(this, "LineStyle", "Int32");
+                xamlMember.Getter = get_53_MainWindow_LineStyle;
+                xamlMember.Setter = set_53_MainWindow_LineStyle;
                 break;
             }
             return xamlMember;

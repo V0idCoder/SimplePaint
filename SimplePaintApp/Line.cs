@@ -1,22 +1,23 @@
-﻿using Microsoft.UI.Xaml.Documents;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.UI;
+﻿// Copyright (c) Microsoft Corporation and Contributors.
+// Licensed under the MIT License.
+
+using Microsoft.Graphics.Canvas.UI.Xaml;
 
 namespace SimplePaintApp
 {
-    public class Lines
+    public class Line : Shape
     {
-        //Update to ClosedShape
-        public float x1 { get; set; }
-        public float y1 { get; set; }
 
-        public float x2 { get; set; }
-        public float y2 { get; set; }
+        public override void Draw(CanvasDrawEventArgs args)
+        {
+            args.DrawingSession.DrawLine(x1, y1, x2, y2, color, strokeWidth, strokeStyle);
 
-        public Color lineColor { get; set; }
+
+        }
+
+
     }
+
+
+
 }

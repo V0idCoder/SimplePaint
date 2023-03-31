@@ -1,25 +1,14 @@
 // Copyright (c) Microsoft Corporation and Contributors.
 // Licensed under the MIT License.
 
-using ABI.System.Numerics;
-using Microsoft.UI;
+using Microsoft.Graphics.Canvas.Geometry;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading.Tasks.Dataflow;
-using System.Xml;
-using Windows.Devices.Printers;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -31,92 +20,105 @@ namespace SimplePaintApp
     /// </summary>
     public sealed partial class MainWindow : Window
     {
-
-
-        Lines lines = new Lines();
-        List<Lines> listLines = new List<Lines>();
-
-        Rectanlge rectanlges = new Rectanlge();
-        List<Rectanlge> listRectangles = new List<Rectanlge>();
-
-      
         public MainWindow()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            appButton.Add(Line);
+            appButton.Add(Rectangle);
+            appButton.Add(Ellipse);
         }
+        List<AppBarToggleButton> appButton = new List<AppBarToggleButton>();
+
+        SelectionTool selectionTool = new SelectionTool();
+
+        void SelectTool(object sender, RoutedEventArgs e)
+        {
+            AppBarToggleButton appBarToggleButton = (AppBarToggleButton)sender;
+            foreach (AppBarToggleButton button in appButton)
+            {
+                if (button != appBarToggleButton)
+                {
+                    button.IsChecked = false;
+                }
+            }
+        }
+
+        List<Shape> formes = new List<Shape>();
+
+        Shape currentForme = new Line();
+
 
 
         private void DrawingCanvas_Draw(Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl sender, Microsoft.Graphics.Canvas.UI.Xaml.CanvasDrawEventArgs args)
         {
-                foreach (var line in listLines)
-                {
-                    args.DrawingSession.DrawLine(line.x1, line.y1, line.x2, line.y2, line.lineColor, 2);
-                }
-           
-                foreach (var rectangle in listRectangles)
-                {
-                    args.DrawingSession.DrawRectangle(rectangle.xr1, rectangle.yr1, rectangle.xr2 - rectangle.xr1, rectangle.yr2 - rectangle.yr1, rectangle.rectangleColor, 2);
-                }
+            currentForme.color = LineColor;
+            currentForme.strokeWidth = LineWidth;
+
+            currentForme.strokeStyle = new CanvasStrokeStyle();
+            currentForme.strokeStyle.DashStyle = (CanvasDashStyle)LineStyle;
+
+            if (currentForme is ClosedShape)
+            {
+                var closedShape = currentForme as ClosedShape;
+                closedShape.fillColor = FillColor;
+
+            }
+
+            foreach (Shape f in formes)
+            {
+                f.Draw(args);
+            }
+
+            currentForme.Draw(args);
+            selectionTool.Draw(args);
             
         }
+
         private void DrawingCanvas_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             if (Line.IsChecked == true)
             {
-                lines = new Lines();
-                lines.x1 = e.GetCurrentPoint(DrawingCanvas).Position._x;
-                lines.y1 = e.GetCurrentPoint(DrawingCanvas).Position._y;
-                lines.lineColor = LineColor;
-                listLines.Add(lines);
+                currentForme = new Line();
             }
-            else
+            if (Rectangle.IsChecked == true)
             {
-
-                rectanlges = new Rectanlge();
-                rectanlges.xr1 = e.GetCurrentPoint(DrawingCanvas).Position._x;
-                rectanlges.yr1 = e.GetCurrentPoint(DrawingCanvas).Position._y;
-                listRectangles.Add(rectanlges);
-                rectanlges.rectangleColor = LineColor;
-
+                currentForme = new Rectangle();
             }
+            if (Ellipse.IsChecked == true)
+            {
+                currentForme = new Ellipse();
+            }
+            currentForme.x1 = e.GetCurrentPoint(DrawingCanvas).Position._x;
+            currentForme.y1 = e.GetCurrentPoint(DrawingCanvas).Position._y;
+
+            currentForme.strokeWidth = 2;
+            selectionTool.SelectedShape = currentForme; 
         }
+
 
         private void DrawingCanvas_PointerMoved(object sender, PointerRoutedEventArgs e)
         {
             if (e.Pointer.IsInContact)
             {
-                if (Line.IsChecked == true)
-                {
-                    lines.x2 = e.GetCurrentPoint(DrawingCanvas).Position._x;
-                    lines.y2 = e.GetCurrentPoint(DrawingCanvas).Position._y;
-                }
-                else
-                {
-                    rectanlges.xr2 = e.GetCurrentPoint(DrawingCanvas).Position._x;
-                    rectanlges.yr2 = e.GetCurrentPoint(DrawingCanvas).Position._y;
-
-                }
+                currentForme.x2 = e.GetCurrentPoint(DrawingCanvas).Position._x;
+                currentForme.y2 = e.GetCurrentPoint(DrawingCanvas).Position._y;
                 DrawingCanvas.Invalidate();
 
             }
-
         }
 
         private void DrawingCanvas_PointerReleased(object sender, PointerRoutedEventArgs e)
         {
-            if (Line.IsChecked == true)
-            {
-                lines.x2 = e.GetCurrentPoint(DrawingCanvas).Position._x;
-                lines.y2 = e.GetCurrentPoint(DrawingCanvas).Position._y;
-            }
-            else
-            {
-                rectanlges.xr2 = e.GetCurrentPoint(DrawingCanvas).Position._x;
-                rectanlges.yr2 = e.GetCurrentPoint(DrawingCanvas).Position._y;
-            }
+
+            currentForme.x2 = e.GetCurrentPoint(DrawingCanvas).Position._x;
+            currentForme.y2 = e.GetCurrentPoint(DrawingCanvas).Position._y;
+            formes.Add(currentForme);
+
             DrawingCanvas.Invalidate();
 
         }
+
+        //Sélection outils/Implémentation de méthode
 
         public Windows.UI.Color LineColor
         {
@@ -134,6 +136,8 @@ namespace SimplePaintApp
         {
             LineColor = ColorsPicker.Color;
             ColorsButton.Flyout.Hide();
+
+
         }
 
         private void SetFillColor_Click(object sender, RoutedEventArgs e)
@@ -145,25 +149,20 @@ namespace SimplePaintApp
         private void CancelColors_Click(object sender, RoutedEventArgs e)
         {
             ColorsButton.Flyout.Hide();
+
+        }
+        public float LineWidth
+        {
+            get => (float)LineWidthSelection.Value;
+            set => LineWidthSelection.Value = Math.Clamp(value,
+                       LineWidthSelection.Minimum, LineWidthSelection.Maximum);
         }
 
-        //Sélection des outils
-
-        private void LineButton_Click(object sender, RoutedEventArgs e)
+        public int LineStyle
         {
-            if(Line.IsChecked == true || Line.IsChecked == false)
-            {
-                Line.IsChecked = true;
-                Rectangle.IsChecked = false;
-            }
-        }
-        private void RectangleButton_Click(object sender, RoutedEventArgs e)
-        {
-            if(Rectangle.IsChecked == true || Rectangle.IsChecked == false)
-            {
-                Rectangle.IsChecked = true;
-                Line.IsChecked = false;
-            }
+            get => LineStyleSelection.SelectedIndex;
+            set => LineStyleSelection.SelectedIndex = Math.Clamp(value, 0,
+                       LineStyleSelection.Items.Count - 1);
         }
 
 
