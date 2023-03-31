@@ -1,0 +1,72 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="SimplePaintApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplePaintApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:win2d="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d">
+
+      
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <CommandBar HorizontalAlignment="Left">
+            <AppBarToggleButton x:Name="Line" Label="Line" IsChecked="True" Click="LineButton_Click" >
+                <AppBarToggleButton.Icon>
+                    <ImageIcon Source="Assets/LineTool.svg"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+
+            <AppBarToggleButton x:Name="Rectangle" Label="Rectangle" IsChecked="False" Click="RectangleButton_Click">
+                <AppBarToggleButton.Icon>
+                    <ImageIcon Source="Assets/RectangleTool.svg"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            <AppBarButton x:Name="ColorsButton"  Label="Colors">
+                <Border x:Name="LineColorBorder" BorderBrush="Black" BorderThickness="5">
+                    <FontIcon x:Name="FillColorIcon" Foreground="White"
+                  FontFamily="Segoe MDL2 Assets" Glyph="&#xE73B;"/>
+                </Border>
+                <AppBarButton.Flyout>
+                    <Flyout>
+                        <RelativePanel>
+                            <ColorPicker x:Name="ColorsPicker" IsHexInputVisible="False"
+                    IsColorChannelTextInputVisible="False"/>
+                            <Grid RelativePanel.Below="ColorsPicker"
+                      RelativePanel.AlignLeftWithPanel="True"
+                      RelativePanel.AlignRightWithPanel="True">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Button Content="Line" Click="SetLineColor_Click" Margin="0,12,2,0"
+                            HorizontalAlignment="Stretch"/>
+                                <Button Content="Fill" Click="SetFillColor_Click" Margin="0,12,2,0"
+                            HorizontalAlignment="Stretch" Grid.Column="1"/>
+                                <Button Content="Cancel" Click="CancelColors_Click" Margin="2,12,0,0"
+                            HorizontalAlignment="Stretch" Grid.Column="2"/>
+                            </Grid>
+                        </RelativePanel>
+                    </Flyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+        </CommandBar>
+
+
+        <win2d:CanvasControl  x:Name="DrawingCanvas" Grid.Row="1"
+                              Draw="DrawingCanvas_Draw"
+                              PointerPressed="DrawingCanvas_PointerPressed"
+                              PointerMoved="DrawingCanvas_PointerMoved"
+                              PointerReleased="DrawingCanvas_PointerReleased"/>
+    </Grid>
+    
+    
+</Window>

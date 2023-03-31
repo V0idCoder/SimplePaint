@@ -1,0 +1,142 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>SimplePaintApp</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+    <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="Assets\AirBrushIcon.svg" />
+    <Content Remove="Assets\AirBrushSwoosh.png" />
+    <Content Remove="Assets\ArrowTool.svg" />
+    <Content Remove="Assets\BrushIcon.svg" />
+    <Content Remove="Assets\BrushSwoosh.png" />
+    <Content Remove="Assets\CalligraphyBrushIcon.svg" />
+    <Content Remove="Assets\CalligraphyBrushSwoosh.png" />
+    <Content Remove="Assets\CalligraphyPenIcon.svg" />
+    <Content Remove="Assets\CalligraphyPenSwoosh.png" />
+    <Content Remove="Assets\CanvasSize.png" />
+    <Content Remove="Assets\Close.svg" />
+    <Content Remove="Assets\CloudCalloutTool.svg" />
+    <Content Remove="Assets\ColorPicker.scale-100.png" />
+    <Content Remove="Assets\ColorPicker.scale-150.png" />
+    <Content Remove="Assets\ColorPicker.scale-200.png" />
+    <Content Remove="Assets\ColorPicker.scale-400.png" />
+    <Content Remove="Assets\ColorPickerTool.svg" />
+    <Content Remove="Assets\Colors.svg" />
+    <Content Remove="Assets\CrayonIcon.svg" />
+    <Content Remove="Assets\CrayonSwoosh.png" />
+    <Content Remove="Assets\Cursor.png" />
+    <Content Remove="Assets\CurvedArrowTool.svg" />
+    <Content Remove="Assets\CurveTool.svg" />
+    <Content Remove="Assets\DiamondTool.svg" />
+    <Content Remove="Assets\DoubleArrowTool.svg" />
+    <Content Remove="Assets\DownArrow.svg" />
+    <Content Remove="Assets\DownArrowDisabled.svg" />
+    <Content Remove="Assets\DownArrowTool.svg" />
+    <Content Remove="Assets\EraserTool.svg" />
+    <Content Remove="Assets\FillTool.svg" />
+    <Content Remove="Assets\FivePointStarTool.svg" />
+    <Content Remove="Assets\Flip.svg" />
+    <Content Remove="Assets\FourPointStarTool.svg" />
+    <Content Remove="Assets\FreeFormSelectionLarge.svg" />
+    <Content Remove="Assets\HeartTool.svg" />
+    <Content Remove="Assets\HexagonTool.svg" />
+    <Content Remove="Assets\LeftArrowTool.svg" />
+    <Content Remove="Assets\LightningTool.svg" />
+    <Content Remove="Assets\LineStyle.svg" />
+    <Content Remove="Assets\MagnifierTool.svg" />
+    <Content Remove="Assets\MarkerIcon.svg" />
+    <Content Remove="Assets\MarkerSwoosh.png" />
+    <Content Remove="Assets\NaturalPencilIcon.svg" />
+    <Content Remove="Assets\NaturalPencilSwoosh.png" />
+    <Content Remove="Assets\NoFillOutline.png" />
+    <Content Remove="Assets\ObjectSize.png" />
+    <Content Remove="Assets\OilBrushIcon.svg" />
+    <Content Remove="Assets\OilBrushSwoosh.png" />
+    <Content Remove="Assets\OnePage.svg" />
+    <Content Remove="Assets\OnePageDisabled.svg" />
+    <Content Remove="Assets\OvalCalloutTool.svg" />
+    <Content Remove="Assets\OvalTool.svg" />
+    <Content Remove="Assets\Paste.svg" />
+    <Content Remove="Assets\PencilTool.svg" />
+    <Content Remove="Assets\PentagonTool.svg" />
+    <Content Remove="Assets\PolygonTool.svg" />
+    <Content Remove="Assets\Print.svg" />
+    <Content Remove="Assets\RectangularSelectionLarge.svg" />
+    <Content Remove="Assets\Resize.svg" />
+    <Content Remove="Assets\RightArrowTool.svg" />
+    <Content Remove="Assets\RightTriangleTool.svg" />
+    <Content Remove="Assets\RotateRight.svg" />
+    <Content Remove="Assets\RoundedRectCalloutTool.svg" />
+    <Content Remove="Assets\RoundedRectTool.svg" />
+    <Content Remove="Assets\Save.svg" />
+    <Content Remove="Assets\SelectionTool.svg" />
+    <Content Remove="Assets\Shapes.svg" />
+    <Content Remove="Assets\SixPointStarTool.svg" />
+    <Content Remove="Assets\SizeButtonIcon.svg" />
+    <Content Remove="Assets\SizeButtonIconDisabled.svg" />
+    <Content Remove="Assets\SolidFill.png" />
+    <Content Remove="Assets\SolidOutline.png" />
+    <Content Remove="Assets\TextTool.svg" />
+    <Content Remove="Assets\Tools.svg" />
+    <Content Remove="Assets\TriangleTool.svg" />
+    <Content Remove="Assets\TwoPage.svg" />
+    <Content Remove="Assets\TwoPageDisabled.svg" />
+    <Content Remove="Assets\UpArrow.svg" />
+    <Content Remove="Assets\UpArrowDisabled.svg" />
+    <Content Remove="Assets\UpArrowTool.svg" />
+    <Content Remove="Assets\WaterColorIcon.svg" />
+    <Content Remove="Assets\WatercolorSwoosh.png" />
+    <Content Remove="Assets\ZoomIn.svg" />
+    <Content Remove="Assets\ZoomInDisabled.svg" />
+    <Content Remove="Assets\ZoomOut.svg" />
+    <Content Remove="Assets\ZoomOutDisabled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\LineTool.svg" />
+    <None Remove="Assets\RectangleTool.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.4" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221109.1" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <!-- 
+    Defining the "Msix" ProjectCapability here allows the Single-project MSIX Packaging
+    Tools extension to be activated for this project even if the Windows App SDK Nuget
+    package has not yet been restored.
+  -->
+  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+
+  <!-- 
+    Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
+    Explorer "Package and Publish" context menu entry to be enabled for this project even if 
+    the Windows App SDK Nuget package has not yet been restored.
+  -->
+  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+	  <WindowsPackageType>None</WindowsPackageType>
+  </PropertyGroup>
+</Project>

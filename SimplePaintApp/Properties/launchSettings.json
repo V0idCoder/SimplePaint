@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SimplePaintApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SimplePaintApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
